@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int T = Integer.parseInt(in.nextLine());
+        int balance = 0;
+        for (int i = 0; i < T; i++) {
+            String line = in.nextLine();
+            if (line.length() > 6) {
+                String[] temp = line.split(" ");
+                balance += Integer.parseInt(temp[1]);
+            } else
+                System.out.println(balance);
+        }
+        in.close(); // closes the scanner command, no problem if it is not there.
+
+    }
+
+}

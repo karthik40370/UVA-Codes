@@ -1,0 +1,44 @@
+C language:
+
+#include <stdio.h>
+#include <string.h>
+int main(){
+    int i=1;
+    char inp[100];
+    while(scanf("%s", inp)!=EOF){
+    if(inp[0]!='*'){
+        if (strcmp(inp,"Hajj")==0){
+            printf("Case %d: Hajj-e-Akbar\n",i);
+        }else if (strcmp(inp,"Umrah")==0){
+            printf("Case %d: Hajj-e-Asghar\n",i);
+        }
+            i++;
+    }else{
+    return 0;
+ }
+    }
+    return 0;
+}
+
+
+Java:
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String line;
+		int t = 1;
+		while (!(line = in.nextLine()).equals("*")) {
+			if (line.equals("Hajj"))
+				System.out.println(String.format("Case %d: Hajj-e-Akbar", t++));
+			else
+				System.out.println(String.format("Case %d: Hajj-e-Asghar", t++));
+		}
+		in.close();
+
+	}
+
+}

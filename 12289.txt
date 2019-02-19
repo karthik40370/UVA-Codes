@@ -1,0 +1,21 @@
+ import java.util.Scanner;
+ class Main {  
+      public static void main(String[] args) {  
+           Scanner scan = new Scanner(System.in);  
+           String line="";  
+           int noOfCases = Integer.parseInt(scan.nextLine());  
+           while((noOfCases--) > 0) {  
+                line = scan.nextLine();  
+                if(line.length() == 5) {  
+                     System.out.println("3");  
+                     continue;  
+                }  
+                if((line.charAt(0) == 'o' && line.charAt(1) == 'n') ||  
+                  (line.charAt(1) == 'n' && line.charAt(2) == 'e') ||  
+                  (line.charAt(2) == 'e' && line.charAt(0) == 'o'))   
+                          System.out.println("1");  
+                else  
+                     System.out.println("2");  
+           }  
+      }  
+ }  

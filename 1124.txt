@@ -1,0 +1,25 @@
+import java.util.Scanner;  
+  
+ public class CelebrityJeopardy {  
+      public static void main(String[] args) {  
+           Scanner scanner = new Scanner(System.in);  
+           while(scanner.hasNext()) {  
+                System.out.println(scanner.nextLine());  
+           }  
+           scanner.close();  
+      }  
+ }
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+char s[100];
+while(gets(s)){
+printf("%s\n",s);
+}
+    return 0;
+}
